@@ -50,7 +50,7 @@
           </div>
         </header>
         <section class="form">
-          <form action="/ma-page-de-traitement" method="post">
+          <form>
             <div>
               <label for="name">CARDHOLDER NAME</label>
               <input
@@ -71,35 +71,41 @@
                 maxlength="19"
               />
             </div>
-            <label for="date">EXP.DATE (MM/YY)</label>
+            <div class="date-cvc">
+              <div class="exp-date">
+                <label for="date">EXP.DATE (MM/YY)</label>
 
-            <input
-              placeholder="MM"
-              type="number"
-              id="date-month"
-              name="date-month"
-              min="1"
-              max="12"
-              maxlength="2"
-            />
-            <input
-              placeholder="YY"
-              type="number"
-              id="date-year"
-              name="date-year"
-              min="22"
-              max="50"
-              maxlength="2"
-            />
-            <label for="cvc">CVC</label>
-            <input
-              placeholder="e.g. 123"
-              type="text"
-              id="cvc-card"
-              name="cvc-card"
-              minlength="3"
-              maxlength="3"
-            />
+                <input
+                  placeholder="MM"
+                  type="number"
+                  id="date-month"
+                  name="date-month"
+                  min="1"
+                  max="12"
+                  maxlength="2"
+                />
+                <input
+                  placeholder="YY"
+                  type="number"
+                  id="date-year"
+                  name="date-year"
+                  min="22"
+                  max="50"
+                  maxlength="2"
+                />
+              </div>
+              <div class="cvc-form">
+                <label for="cvc">CVC</label>
+                <input
+                  placeholder="e.g. 123"
+                  type="text"
+                  id="cvc-card"
+                  name="cvc-card"
+                  minlength="3"
+                  maxlength="3"
+                />
+              </div>
+            </div>
             <div class="button">
               <button type="submit" class="confirm">Confirm</button>
             </div>
